@@ -1,2 +1,1 @@
-"# SmartHouse" 
-"# SmartHouse" 
+start page - index.html
