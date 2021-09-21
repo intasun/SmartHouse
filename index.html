@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SmartHome</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <link rel="stylesheet" type="text/css" href="./style.css" />
+   </head>
+   <body>
+      
+      
+      
+      <div class="content">
+         <div class="header">
+            <div class="logoText smart">SMART</div>
+            <div class="logoText home">HOME</div>
+            <img src="./smartHomeLogo.jpg" alt="logo" />
+            
+            <form name="deviceCreator">
+               <select name="deviceType">
+                  <option value="" disabled selected>Select device</option>
+                  <option value="AirConditioning">Air conditioning</option>
+                  <option value="Fridge">Fridge</option>
+                  <option value="Lamp">Lamp</option>
+                  <option value="TvSet">TV set</option>
+               </select>
+               
+               <select name="location">
+                  <option value="" disabled selected>Select location</option>
+                  <option value="bathroom">Bathroom</option>
+                  <option value="bedroom1">Bedroom1</option>
+                  <option value="bedroom2">Bedroom2</option>
+                  <option value="hall">Hall</option>
+                  <option value="kitchen">Kitchen</option>
+               </select>
+               
+               <button type="button">Add device</button>
+            </form>
+         </div>
+         
+         <div class="mainContent" id="mainContent"></div>
+         
+      </div>
+      
+      <script src="./deviceTypes.js"></script>
+      <script src="./builder.js"></script>
+      <script src="./viewer.js"></script>
+      
+   </body>
+</html>

@@ -1,0 +1,250 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background-color: #00347c;
+}
+
+form[name="deviceCreator"]{
+   width: 100%;
+   margin: 10px;
+   display: flex;
+   justify-content: space-between;
+   flex-flow: row nowrap;
+   text-align-last: center;
+}
+
+form[name="deviceCreator"] > select{
+   height: 25px;
+   width: 30%;
+   min-width: 130px;
+   border-radius: 10px;
+   background-color: #005dc1;
+   border: none;
+   color: #e6b8f1;
+   font-weight: bold;
+   box-shadow: 1px 1px 7px 1px #e6b8f1, 1px -1px 7px 1px #e6b8f1, -1px 1px 7px 1px #e6b8f1, -1px -1px 7px 1px #e6b8f1;
+}
+
+form[name="deviceCreator"] > button{
+   height: 25px;
+   border-radius: 10px;
+   width: 20%;
+   min-width: 75px;
+   background-color: #005dc1;
+   color: #8dfeff;
+   border: none;
+   font-weight: bold;
+   box-shadow: 1px 1px 7px 1px #8dfeff, 1px -1px 7px 1px #8dfeff, -1px 1px 7px 1px #8dfeff, -1px -1px 7px 1px #8dfeff;
+}
+
+@media (min-width: 650px) {
+   form[name="deviceCreator"]{
+      width: 20%;
+      height: 130px;
+      margin: 30px;
+      flex-flow: column nowrap;
+      align-items: flex-end;
+      text-align-last: center;
+   }
+   
+   form[name="deviceCreator"] > select{
+      width: 100%;
+   }
+
+   form[name="deviceCreator"] > button{
+      width: 50%;
+   }
+}
+
+.content{
+   max-width: 1000px;
+   margin: 0 auto;
+   box-shadow: 3px 0 5px 2px #005dc1, -3px 0 5px 2px #005dc1, 0 3px 5px 2px #005dc1;
+}
+
+.mainContent{
+   min-height: 500px;
+   background-color: #00275b;
+   display: flex;
+   justify-content: space-around;
+   align-content: space-around;
+   flex-flow: row wrap;
+   padding: 40px 20px 15px 20px;
+}
+
+.header{
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   flex-flow: row-reverse wrap;
+   align-items: flex-end;
+   background-color: #001f49;
+   box-shadow: 0 3px 5px 2px #005dc1;
+}
+
+.logoText{
+   position: absolute;
+   color: plum;
+   font-size: 4em;
+   font-weight: bold;
+}
+
+.smart{
+   top: 10%;
+   left: 2%;
+}
+
+.home{
+   top: 30%;
+   left: 10%;
+}
+
+@media (min-width: 650px) {
+   .smart{
+      top: 10%;
+      left: 28%;
+   }
+
+   .home{
+      top: 30%;
+      left: 35%;
+   }
+}
+   
+.header > img{
+   max-height: 250px;
+
+}
+
+.deviceItem{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   height: 300px;
+   width: 170px;
+   margin-bottom: 25px;
+   background-color: royalblue;
+   border-radius: 15px;
+   box-shadow: 0 0 10px 1px #8dfeff;
+}
+
+.itemHead {
+   height: 75px;
+   text-align: center;
+   font-size: 1.2em;
+   position: relative;
+   background-color: skyblue;
+   color: navy;
+   line-height: 75px;
+   border-radius: 15px;
+   box-shadow: 1px 1px 7px 2px #e6b8f1, 1px -1px 7px 2px #e6b8f1, -1px 1px 7px 2px #e6b8f1, -1px -1px 7px 2px #e6b8f1;
+}
+
+.itemHead > p{
+   padding: 5px;
+   line-height: normal;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.itemFoot{
+   height: 35px;
+   text-align: center;
+   font-size: 0.8em;
+   font-style: italic;
+   color: #e6b8f1;
+   line-height: 35px;
+}
+
+.itemFoot > p{
+   line-height: normal;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.del-btn{
+   padding: 5px;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   right: 3px;
+   padding: 0;
+   color: navy;
+   background-color: transparent;
+   border: none;
+}
+
+.itemBody{
+   height: 185px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: flex-start;
+   padding: 2px;
+   color: #001f49;
+}
+
+.switch{
+   height: 50px;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   padding: 10px;
+}
+
+.switch-btn{
+   width: 25%;
+   margin-top: 5px;
+   border-radius: 7px;
+   background-color: cornflowerblue;
+   color: #001f49;
+}
+
+.range, .mode{
+   height: 50px;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   padding: 3px;
+}
+
+.range-group{
+   width: 70px;
+}
+
+.range-group > input{
+   width: 30px;
+   height: 22px;
+   text-align: center;
+   background-color: cornflowerblue;
+   color: #001f49;
+}
+
+.range-group > button{
+   width: 20px;
+   height: 22px;
+   background-color: cornflowerblue;
+   color: #001f49;
+}
+
+.mode > select{
+   height: 22px;
+   width: 105px;
+   text-align-last: center;
+   border-radius: 7px;
+   background-color: cornflowerblue;
+   color: #001f49;
+}
+
+.next{
+   border-radius: 0 7px 7px 0;
+}
+
+.previous 
+{
+   border-radius: 7px 0 0 7px;
+}
